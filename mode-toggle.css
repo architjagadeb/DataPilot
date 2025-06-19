@@ -1,0 +1,52 @@
+/* mode-toggle.css: Additive, non-intrusive light/dark mode support */
+:root {
+  --dp-bg-light: #f5f7fa;
+  --dp-bg-dark: #001f3f;
+  --dp-text-light: #181a20;
+  --dp-text-dark: #fff;
+  --dp-glass-light: rgba(255,255,255,0.7);
+  --dp-glass-dark: rgba(30, 40, 60, 0.7);
+}
+
+body.light-mode {
+  background: var(--dp-bg-light) !important;
+  color: var(--dp-text-light) !important;
+}
+body.light-mode .logo-topright,
+body.light-mode .nav-links,
+body.light-mode .navbar,
+body.light-mode .popup,
+body.light-mode .visual {
+  background: var(--dp-glass-light) !important;
+  color: var(--dp-text-light) !important;
+}
+body.light-mode .nav-links a,
+body.light-mode .nav-links a:hover {
+  color: var(--dp-text-light) !important;
+}
+
+/* Toggle button styles */
+#mode-toggle-btn {
+  position: fixed;
+  top: 18px;
+  left: 18px;
+  z-index: 30000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: var(--dp-glass-dark);
+  color: #ffd700;
+  font-size: 1.3rem;
+  box-shadow: 0 2px 8px #0003;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, color 0.3s;
+}
+body.light-mode #mode-toggle-btn {
+  background: var(--dp-glass-light);
+  color: #0077ff;
+}
+#mode-toggle-btn:focus { outline: 2px solid #4f8cff; } 
