@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Analytics Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Logo in top-right -->
+  <div class="logo-topright">Analytics Pro</div>
+
+  <!-- Loader Section -->
+  <div id="loader">
+    <video autoplay muted playsinline id="loaderVideo">
+      <source src="assets/loader.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Centered Navbar -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="ratings">
+      <span>⭐ 4.8 rating on Capterra</span>
+      <span>⭐ 4.8 rating on G2</span>
+      <span>⭐ 100+ reviews on Xero</span>
+      <span>⭐ 200+ reviews on QuickBooks</span>
+    </div>
+
+    <h1 class="main-heading">
+      <span class="word">Create</span>
+      <span class="word">reports,</span>
+      <span class="word">forecasts,</span>
+      <span class="word">dashboards &</span>
+      <span class="word">consolidations</span>
+    </h1>
+
+    <p class="subtext">
+      🌟 Now with <strong>AI-insights</strong>
+    </p>
+
+    <button class="cta" onclick="window.location.href='pricing.html'">Start 14-day free trial →</button>
+
+  </section>
+  <div class="hero-visuals">
+    <div class="visual visual-create">
+      <img src="assets/graph.png" alt="Create Graph" />
+    </div>
+    <div class="visual visual-reports">
+      <img src="assets/stats.png" alt="Reports KPI" />
+    </div>
+    <div class="visual visual-forecasts">
+      <video src="assets/features-services.mp4" autoplay muted loop playsinline></video>
+    </div>
+    <div class="visual visual-dashboards">
+      <video src="assets/dashboard.mp4" autoplay muted loop playsinline></video>
+    </div>
+    <div class="visual visual-consolidations">
+      <video src="assets/consolidations.mp4" autoplay muted loop playsinline></video>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

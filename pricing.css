@@ -1,0 +1,215 @@
+body {
+  background: linear-gradient(135deg, #1a1440 0%, #7a5cff 100%);
+  overflow-x: hidden;
+}
+
+.pricing-section {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #e0e0ff;
+  margin-bottom: 18px;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.pricing-desc {
+  color: #bbaaff;
+  font-size: 1.15rem;
+  margin-bottom: 38px;
+  text-align: center;
+  max-width: 700px;
+}
+
+.pricing-cards {
+  display: flex;
+  gap: 36px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 32px auto;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+.pricing-cards::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.pricing-card {
+  background: rgba(120, 60, 255, 0.18);
+  border-radius: 24px;
+  box-shadow: 0 8px 40px rgba(80, 40, 180, 0.18);
+  backdrop-filter: blur(18px);
+  padding: 38px 32px 32px 32px;
+  min-width: 260px;
+  max-width: 320px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s, background 0.3s;
+  cursor: pointer;
+  border: 1.5px solid rgba(180, 120, 255, 0.18);
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px) scale(1.04) rotate(-1deg);
+  box-shadow: 0 16px 48px 0 rgba(120, 60, 255, 0.25);
+  background: rgba(120, 60, 255, 0.28);
+}
+
+.pricing-card-header {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ffd700;
+  letter-spacing: 0.02em;
+}
+
+.pricing-card-orders {
+  font-size: 1.1rem;
+  color: #e0e0ff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.pricing-card-orders span {
+  font-size: 0.95rem;
+  color: #bbaaff;
+  opacity: 0.8;
+}
+
+.pricing-card-price {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #ffd700;
+  margin-bottom: 18px;
+  text-shadow: 0 2px 8px #ffd70044;
+}
+.pricing-card-price span {
+  font-size: 1.1rem;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 22px 0;
+  width: 100%;
+}
+.pricing-features li {
+  font-size: 1.05rem;
+  color: #e0e0ff;
+  margin-bottom: 8px;
+  padding-left: 18px;
+  position: relative;
+}
+.pricing-features li:before {
+  content: '•';
+  color: #ffd700;
+  position: absolute;
+  left: 0;
+  font-size: 1.2em;
+  top: 0;
+}
+
+.pricing-btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #7a5cff 60%, #00bfff 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.08rem;
+  padding: 12px 32px;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px #7a5cff44;
+  text-decoration: none;
+  transition: background 0.25s, transform 0.18s, box-shadow 0.25s;
+  letter-spacing: 0.02em;
+  margin-top: 8px;
+}
+.pricing-btn:hover {
+  background: linear-gradient(90deg, #00bfff 0%, #7a5cff 100%);
+  color: #ffd700;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 8px 32px #00bfff44;
+}
+
+.pricing-card.popular {
+  border: 2.5px solid #ffd700;
+  background: rgba(120, 60, 255, 0.32);
+  box-shadow: 0 12px 48px 0 #ffd70033, 0 8px 40px rgba(80, 40, 180, 0.18);
+  z-index: 2;
+}
+.popular-badge {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: #ffd700;
+  color: #4b2e83;
+  font-weight: 700;
+  font-size: 0.98rem;
+  padding: 5px 16px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px #ffd70044;
+  letter-spacing: 0.02em;
+}
+
+.pricing-note {
+  color: #bbaaff;
+  font-size: 1.08rem;
+  margin-top: 18px;
+  text-align: center;
+  opacity: 0.85;
+}
+
+@media (max-width: 1100px) {
+  .pricing-cards {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 18px;
+    align-items: stretch;
+  }
+  .pricing-card {
+    min-width: 260px;
+    max-width: 320px;
+    width: 80vw;
+  }
+}
+@media (max-width: 700px) {
+  .pricing-section {
+    padding: 32px 0 24px 0;
+  }
+  .pricing-title {
+    font-size: 1.5rem;
+  }
+  .pricing-cards {
+    gap: 12px;
+    padding: 0 6px;
+  }
+  .pricing-card {
+    padding: 18px 8px 18px 8px;
+    border-radius: 14px;
+    min-width: 220px;
+    max-width: 90vw;
+    width: 90vw;
+  }
+  .pricing-btn {
+    font-size: 0.98rem;
+    padding: 8px 16px;
+    border-radius: 10px;
+  }
+} 
