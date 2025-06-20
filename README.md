@@ -1,25 +1,34 @@
-# DataPilot
+# 📊 DataPilot
 
-### 🚀 Frontend Hackathon Submission – IIT Bhubaneswar
+### 🚀 Frontend Hackathon Submission – IIT Bhubaneswar (VOBE Challenge 2025)
 
-**DataPilot** is a modern, responsive, multi-section homepage for an analytics product — built using HTML, CSS, and JavaScript. It includes a futuristic design, interactive visuals, hover-based transitions, and a light/dark mode toggle.
+**DataPilot** is a sleek, responsive homepage designed for an AI-powered analytics platform. It showcases strong frontend capabilities through animated transitions, interactive sections, and an intuitive light/dark mode — all optimized for performance and accessibility.
 
----
+> 💡 Built using **HTML, CSS, and JavaScript** with a focus on futuristic UI/UX.
 
 ## 🌟 Features Implemented
 
-- ✅ Full-screen animated **video loader** using `loader.mp4`
-- ✅ Sticky **navbar with smooth scroll** navigation
-- ✅ Interactive **hero section** with hover-triggered popups
-- ✅ Popups replaced with **visual graphs, stats, and videos** from assets
-- ✅ **Testimonials** section (user quotes)
-- ✅ **Pricing section** for plans
-- ✅ Light/Dark **theme toggle** with CSS/JS
-- ✅ **Responsive** on mobile, tablet, and desktop
-- ✅ Uses **multiple assets** provided in the hackathon drive
-- ✅ Organized code with modular HTML/CSS/JS per page
+- ✅ Full-screen animated **video loader** (`loader.mp4`)
+- ✅ Sticky **navbar with smooth scroll**
+- ✅ Interactive **hero section** with hover-based popups
+- ✅ Popups replaced by **graphs, stats, and embedded videos**
+- ✅ Modular **testimonials** section (with star ratings & avatars)
+- ✅ Detailed **pricing cards** with hover effects & mobile scroll
+- ✅ Custom **light/dark mode toggle** (CSS variables + `localStorage`)
+- ✅ Fully **responsive** layout (desktop, tablet, mobile)
+- ✅ Multiple **assets used** from the hackathon drive
+- ✅ **Clean and modular structure** with organized HTML/CSS/JS per component
 
----
+## ⚙️ Tech Stack
 
-## 📁 Project Structure
+- HTML5, CSS3, Vanilla JavaScript
+- CSS Grid & Flexbox
+- Responsive Design with Media Queries
+- IntersectionObserver API (scroll animations)
+- `localStorage` for light/dark mode persistence
 
+## 🧪 How to Run Locally
+
+```bash
+git clone https://github.com/architjagadeb/datapilot.git
+cd datapilot
